@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="viewStart"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/newinvoice"
+        android:layout_width="314dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="420dp"
+        android:backgroundTint="@color/purple_500"
+        android:checkable="true"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:onClick="NewInvoice"
+        android:text="New"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="314dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="276dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="BuyerList"
+        android:text="Buyer List"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newinvoice" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="314dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="InvoiceList"
+        android:text="Invoice List"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.149" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

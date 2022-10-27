@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InvoiceMaker</string>
+    <string name="buyer_name">Enter Buyer Name</string>
+    <string name="buyer_address">Enter Buyer Address</string>
+    <string name="buyer_phone">Enter Buyer Mobile No.</string>
+    <string name="buyer_info">Buyer Info</string>
+    <string name="pdfviewer">pdfViewer</string>
+</resources>

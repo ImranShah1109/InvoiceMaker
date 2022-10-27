@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.invoicemaker">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:fullBackupContent="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InvoiceMaker">
+
+        <meta-data android:name="com.google.android.gms.API_KEY"
+            android:value="AIzaSyD6NSrIMnAI8p5osSUvnZKfNTGpVy8C-oY"/>
+
+        <activity android:name=".InvoiceListActivity"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".BuyerListActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PdfViewerActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MakeInvoiceActivity" />
+        <activity
+            android:name=".AddProductActivity"
+            android:parentActivityName=".NewInvoice" />
+        <activity
+            android:name=".AddBuyerActivity"
+            android:parentActivityName=".NewInvoice" />
+        <activity
+            android:name=".NewInvoice"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
